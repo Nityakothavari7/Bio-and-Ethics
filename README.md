@@ -15,9 +15,16 @@ The datasets were taken from the NCBI’s Gene Expression Omnibus(GEO) and hence
 4. GSM258773 - CD4+
 5. GSM211514 - IL-6
 Link for the dataset is https://www.ncbi.nlm.nih.gov/geo/
+search with IDs Given above
 
 ## Methodology
-First, 
-Pre-processing of the data was done using MinMaxScaler in Python
+1. Pre-processing using MinMaxScaler in Python(20K samples  taken in each biomarker)
+2. Conversion of log2 normalised gene expression data to  serum  levels.
+3. Application of threshold values for each of the biomarkers to detect Rheumatoid Arthritis 
+4. Xgboost (gradient boosting) algorithm used to predict RA)
+5. Implemented GUI using tkinter to input user serum levels of biomarkers
+6. Use of Blockchain technology to secure user data
+
+
 
 
