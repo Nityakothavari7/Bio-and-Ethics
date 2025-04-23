@@ -44,30 +44,33 @@ MinMax Scaler is used in pre-processing. The data is split to 80-20 for traninig
   Testing is done by plotting the validation loss and training loss. The trained model is stored in the device its run by in xgboost_RA_severity_model.json as a .json file. The Feature scaler is saved as scaler.pk1 and the Label encounter as label_encoder.pk1.
 
 ## BUILDING GUI 
-  Using Tkinter in python we built the Graphical User Interface (GUI) for entering biomarker levels(5) and get prediction using the trained model.
-  Tkinter is a standard GUI library for Python which provides a fast and easy way to create desktop applications.
-  The pre-trained model was loaded for making predictions.The application window was given a sky blue background.
-  5 Input fields were created and a “prediction severity” button was added to get prediction.
-  This GUI takes input biomarker levels, scales them, makes a prediction and displays the result.
-  This GUI is useful for lab researchers, clinicians and doctors to analyze patients with RA severity.
+
+  	1. Using Tkinter in python we built the Graphical User Interface (GUI) for entering biomarker levels(5) and get prediction using the trained model.
+ 	2. Tkinter is a standard GUI library for Python which provides a fast and easy way to create desktop applications.
+  	3. The pre-trained model was loaded for making predictions.The application window was given a sky blue background.
+  	4. 5 Input fields were created and a “prediction severity” button was added to get prediction.
+  	5. This GUI takes input biomarker levels, scales them, makes a prediction and displays the result.
+  	6. This GUI is useful for lab researchers, clinicians and doctors to analyze patients with RA severity.
 
 ## BLOCKCHAIN INTEGRATION
-  Data Bundling
+
+ 	 Data Bundling
     - Each time a user inputs biomarker levels and gets a severity prediction, the data is bundled into a "block" along with a timestamp.
-  Blockchain Structure
+  	Blockchain Structure
     - These blocks are added to a secure, linked digital ledger (the "blockchain").
-Immutability
+	Immutability
     - Once added, the blocks cannot be changed, ensuring tamper-proof data.
-Data Integrity
+	Data Integrity
     - This prevents alteration of past medical records, ensuring accurate and trustworthy information.
-Transparency & Security
+	Transparency & Security
     - Blockchain guarantees full transparency, security, and integrity, critical for sensitive health data tracking.
 ## ETHICAL STANDARDS:
 
 The ethical standards taken into consideration when dealing with AI based systems are:
-a.	The system is designed with minimum complexity and more user friendliness so that can serve the purpose respecting human rights and enhancing their capabilities it by serving their needs. 
-b.	User trust is gained by providing transparency ensuring of how the system takes decisions. The model counts on moral human society and human rights.
-c.	Given to its transparency user might think that the system is not safe for use but our first intention is to be private. Our system is Tamper-evident which is by the blockchain integration.
+
+	a. The system is designed with minimum complexity and more user friendliness so that can serve the purpose respecting human rights and enhancing their capabilities it by serving their needs. 
+	b. User trust is gained by providing transparency ensuring of how the system takes decisions. The model counts on moral human society and human rights.
+	c. Given to its transparency user might think that the system is not safe for use but our first intention is to be private. Our system is Tamper-evident which is by the blockchain integration.
 
 ## Libraries used in python:
 	pandas for data handling
